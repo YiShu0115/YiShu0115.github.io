@@ -102,10 +102,17 @@
     }
     h2 {
       color: var(--primary);
-      margin: 0 0 16px;
-      border-left: 4px solid var(--primary);
-      padding-left: 12px;
-      font-size: 22px;
+      margin: 0 0 24px;
+      padding: 0 0 12px 0;
+      font-size: 24px;
+      font-weight: 600;
+      position: relative;
+      border-bottom: 1px solid #333; /* 黑色横线 */
+    }
+    
+    /* 移除左侧装饰线 */
+    h2::before {
+      display: none;
     }
     h3 {
       margin: 10px 0 4px;
